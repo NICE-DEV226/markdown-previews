@@ -676,8 +676,8 @@ copies or substantial portions of the Software.
 ## 📞 Contact & Support
 
 ### 👥 **Équipe de Développement**
-- **Lead Developer**: [@votre-username](https://github.com/votre-username)
-- **UI/UX Designer**: [@designer-username](https://github.com/designer-username)
+- **Lead Developer**: [@votre-username](https://github.com/NICE-DEV226e)
+- **UI/UX Designer**: [@designer-username](https://github.com/NICE-DEV226)
 
 ### 📧 **Contact**
 - **Email**: support@markdown-parser.dev
@@ -686,8 +686,8 @@ copies or substantial portions of the Software.
 
 ### 🆘 **Support**
 - **Documentation**: [docs.markdown-parser.dev](https://docs.markdown-parser.dev)
-- **FAQ**: [wiki/FAQ](https://github.com/username/markdown-parser/wiki/FAQ)
-- **Issues**: [GitHub Issues](https://github.com/username/markdown-parser/issues)
+- **FAQ**: [wiki/FAQ](https://github.com/NICE-DEV226/markdown-previews/wiki/FAQ)
+- **Issues**: [GitHub Issues](https://github.com/NICE-DEV226/markdown-previews/issues)
 
 ---
 
@@ -695,9 +695,9 @@ copies or substantial portions of the Software.
 
 ### 🌟 **Stats du Projet**
 
-![GitHub stars](https://img.shields.io/github/stars/username/markdown-parser?style=social)
-![GitHub forks](https://img.shields.io/github/forks/username/markdown-parser?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/username/markdown-parser?style=social)
+![GitHub stars](https://img.shields.io/github/stars/NICE-DEV226/markdown-previews?style=social)
+![GitHub forks](https://img.shields.io/github/forks/NICE-DEV226/markdown-previews?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/NICE-DEV226/markdown-previews?style=social)
 
 **⭐ N'oubliez pas de donner une étoile si ce projet vous aide ! ⭐**
 
