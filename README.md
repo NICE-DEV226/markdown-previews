@@ -9,7 +9,7 @@
 
 **Un parseur Markdown complet développé en JavaScript vanilla avec application d'édition avancée**
 
-[🚀 Demo Live](#) • [📖 Documentation](#installation) • [🐛 Issues](https://github.com/username/markdown-parser/issues) • [💡 Contributions](#contribution)
+[🚀 Demo Live](#) • [📖 Documentation](#installation) • [🐛 Issues](https://github.com/NICE-DEV226/markdown-previews/issues) • [💡 Contributions](#contribution)
 
 </div>
 
@@ -100,7 +100,7 @@ Une interface utilisateur avancée pour l'édition et la prévisualisation de Ma
 markdown-parser/
 │
 ├── CSS/
-│   ├── style.css
+│   ├── styles.css
 │
 ├── JS/
 │   ├── markdown-parser.js
