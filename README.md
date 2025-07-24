@@ -99,32 +99,14 @@ Une interface utilisateur avancée pour l'édition et la prévisualisation de Ma
 ```
 markdown-parser/
 │
-├── src/
-│   ├── MarkdownParser.js          # Parseur principal
-│   ├── MarkdownPreviewerApp.js    # Application UI
-│   └── styles/
-│       ├── main.css              # Styles principaux
-│       ├── themes.css            # Thèmes visuels
-│       └── responsive.css        # Styles adaptatifs
+├── CSS/
+│   ├── style.css
 │
-├── examples/
-│   ├── basic-usage.html          # Exemple basique
-│   ├── advanced-features.html    # Fonctionnalités avancées
-│   └── custom-styling.html       # Personnalisation
+├── JS/
+│   ├── markdown-parser.js
+│   ├── app.js
 │
-├── tests/
-│   ├── parser.test.js           # Tests du parseur
-│   ├── app.test.js              # Tests de l'application
-│   └── fixtures/                # Données de test
-│
-├── docs/
-│   ├── API.md                   # Documentation API
-│   ├── CONTRIBUTING.md          # Guide de contribution
-│   └── CHANGELOG.md             # Historique des versions
-│
-├── index.html                   # Demo principale
-├── README.md                    # Ce fichier
-└── package.json                 # Configuration (optionnel)
+├── index.html
 ```
 
 ### 🔧 **Architecture du Parseur**
