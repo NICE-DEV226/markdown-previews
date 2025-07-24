@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Previewer - Éditeur en temps réel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">
+                    <span class="logo-icon">#</span>
+                    Markdown Previewer
+                </h1>
+                <div class="header-actions">
+                    <button class="btn btn-secondary" id="toggleLayout">
+                        <span class="btn-icon">⚏</span>
+                        Layout
+                    </button>
+                    <button class="btn btn-secondary" id="exportHtml">
+                        <span class="btn-icon">↓</span>
+                        Export HTML
+                    </button>
+                    <button class="btn btn-primary" id="clearAll">
+                        <span class="btn-icon">✕</span>
+                        Effacer
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        
+        <main class="main-content">
+            <div class="editor-container">
+                
+                <div class="panel editor-panel">
+                    <div class="panel-header">
+                        <h2 class="panel-title">
+                            <span class="panel-icon">✎</span>
+                            Éditeur Markdown
+                        </h2>
+                        <div class="panel-actions">
+                            <span class="word-count" id="wordCount">0 mots</span>
+                        </div>
+                    </div>
+                    <div class="panel-content">
+                        <textarea 
+                            id="markdownInput" 
+                            class="markdown-editor" 
+                            placeholder="Tapez votre Markdown ici...
+
+# Bienvenue dans Markdown Previewer
+
+## Fonctionnalités
+
+- **Prévisualisation en temps réel** : Voyez vos modifications instantanément
+- **Design professionnel** : Interface sobre et élégante
+- **Export HTML** : Exportez votre contenu au format HTML
+- **Responsive** : Fonctionne sur tous les appareils
+
+### Syntaxe Markdown supportée
+
+- Titres (# ## ###)
+- **Texte en gras** et *italique*
+- [Liens](https://example.com)
+- Listes à puces et numérotées
+- `Code inline` et blocs de code
+- > Citations
+- ---
+- Tableaux
+
+```javascript
+// Exemple de code
+function hello() {
+    console.log('Hello, Markdown!');
+}
+```
+
+Commencez à taper pour voir la magie opérer !"></textarea>
+                    </div>
+                </div>
+
+                
+                <div class="panel preview-panel">
+                    <div class="panel-header">
+                        <h2 class="panel-title">
+                            <span class="panel-icon">👁</span>
+                            Prévisualisation
+                        </h2>
+                        <div class="panel-actions">
+                            <button class="btn btn-ghost" id="syncScroll">
+                                <span class="btn-icon">⇅</span>
+                                Sync Scroll
+                            </button>
+                        </div>
+                    </div>
+                    <div class="panel-content">
+                        <div id="markdownPreview" class="markdown-preview"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="footer-text">
+                    Développé avec ❤️ | 
+                    <a href="#" class="footer-link">Documentation Markdown</a> | 
+                    <a href="#" class="footer-link">Raccourcis clavier</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="markdown-parser.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+/* Les gas je sais pas vous mais le JS vas un peut vous degouter 😀🍷 */
