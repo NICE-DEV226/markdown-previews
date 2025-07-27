@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Markdown Previewer</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">
+                    <span class="logo-icon">#</span>
+                    Markdown Previewer
+                </h1>
+                
+                <!-- Menu Hamburger -->
+                <button class="hamburger-menu" id="hamburgerMenu" aria-label="Menu de navigation">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                
+                <!-- Navigation Desktop -->
+                <div class="header-actions desktop-nav">
+                    <a href="app.html" class="btn btn-secondary">
+                        <span class="btn-icon">✎</span>
+                        Ouvrir l'éditeur
+                    </a>
+                    <a href="about.html" class="btn btn-secondary">
+                        <span class="btn-icon">ℹ️</span>
+                        À Propos
+                    </a>
+                    <div class="theme-selector">
+                        <button id="themeToggle" class="theme-toggle" aria-label="Basculer le thème">
+                            <span class="theme-icon">🌙</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Menu Mobile -->
+                <nav class="mobile-nav" id="mobileNav">
+                    <div class="mobile-nav-content">
+                        <a href="index.html" class="mobile-nav-item active">
+                            <span class="mobile-nav-icon">🏠</span>
+                            Accueil
+                        </a>
+                        <a href="app.html" class="mobile-nav-item">
+                            <span class="mobile-nav-icon">✎</span>
+                            Éditeur
+                        </a>
+                        <a href="about.html" class="mobile-nav-item">
+                            <span class="mobile-nav-icon">ℹ️</span>
+                            À Propos
+                        </a>
+                        <div class="mobile-nav-divider"></div>
+                        <button class="mobile-nav-item theme-toggle-mobile" id="themeToggleMobile">
+                            <span class="mobile-nav-icon theme-icon-mobile">🌙</span>
+                            Changer de thème
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content - Home Page -->
+        <main class="main-content home-page">
+            <div class="hero-section">
+                <h2 class="hero-title">Transformez votre texte en un clin d'œil.</h2>
+                <p class="hero-subtitle">Éditeur Markdown en temps réel avec prévisualisation instantanée et design professionnel.</p>
+                <a href="app.html" class="btn btn-primary btn-lg">
+                    <span class="btn-icon">🚀</span>
+                    Commencer à écrire
+                </a>
+            </div>
+
+            <section class="features-section">
+                <div class="feature-item">
+                    <span class="feature-icon">✍️</span>
+                    <h3>Édition en temps réel</h3>
+                    <p>Tapez votre Markdown et voyez le rendu instantanément. Plus besoin de recharger la page !</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✨</span>
+                    <h3>Design Professionnel</h3>
+                    <p>Une interface élégante et moderne, optimisée pour une expérience utilisateur agréable.</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🌓</span>
+                    <h3>Thèmes Clair & Sombre</h3>
+                    <p>Basculez facilement entre un thème clair et un thème sombre pour un confort visuel optimal.</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">💻</span>
+                    <h3>Code HTML Brut</h3>
+                    <p>Visualisez le code HTML généré à partir de votre Markdown, formaté pour une meilleure lisibilité.</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="footer-text">
+                    Développé avec ❤️ | 
+                    <a href="app.html" class="footer-link">Éditeur</a> | 
+                    <a href="about.html" class="footer-link">À Propos</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="JS/hamburger-menu.js"></script>
+    <script src="JS/theme-handler.js"></script>
+</body>
+</html>
+

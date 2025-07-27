@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Previewer - Éditeur en temps réel</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">
+                    <span class="logo-icon">#</span>
+                    Markdown Previewer
+                </h1>
+                
+                <!-- Menu Hamburger -->
+                <button class="hamburger-menu" id="hamburgerMenu" aria-label="Menu de navigation">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                
+                <!-- Navigation Desktop -->
+                <div class="header-actions desktop-nav">
+                    <a href="index.html" class="btn btn-secondary">
+                        <span class="btn-icon">🏠</span>
+                        Accueil
+                    </a>
+                    <a href="about.html" class="btn btn-secondary">
+                        <span class="btn-icon">ℹ️</span>
+                        À Propos
+                    </a>
+                    <div class="theme-selector">
+                        <button id="themeToggle" class="theme-toggle" aria-label="Basculer le thème">
+                            <span class="theme-icon">🌙</span>
+                        </button>
+                    </div>
+                    <button class="btn btn-secondary" id="importFile">
+                        <span class="btn-icon">📁</span>
+                        Importer
+                    </button>
+                    <button class="btn btn-secondary" id="toggleLayout">
+                        <span class="btn-icon">⚏</span>
+                        Layout
+                    </button>
+                    <button class="btn btn-secondary" id="exportHtml">
+                        <span class="btn-icon">↓</span>
+                        Export HTML
+                    </button>
+                    <button class="btn btn-primary" id="clearAll">
+                        <span class="btn-icon">✕</span>
+                        Effacer
+                    </button>
+                    <input type="file" id="fileInput" accept=".md,.txt" style="display: none;">
+                </div>
+                
+                <!-- Menu Mobile -->
+                <nav class="mobile-nav" id="mobileNav">
+                    <div class="mobile-nav-content">
+                        <a href="index.html" class="mobile-nav-item">
+                            <span class="mobile-nav-icon">🏠</span>
+                            Accueil
+                        </a>
+                        <a href="app.html" class="mobile-nav-item active">
+                            <span class="mobile-nav-icon">✎</span>
+                            Éditeur
+                        </a>
+                        <a href="about.html" class="mobile-nav-item">
+                            <span class="mobile-nav-icon">ℹ️</span>
+                            À Propos
+                        </a>
+                        <div class="mobile-nav-divider"></div>
+                        <button class="mobile-nav-item" id="importFileMobile">
+                            <span class="mobile-nav-icon">📁</span>
+                            Importer fichier
+                        </button>
+                        <button class="mobile-nav-item" id="exportHtmlMobile">
+                            <span class="mobile-nav-icon">↓</span>
+                            Export HTML
+                        </button>
+                        <button class="mobile-nav-item" id="clearAllMobile">
+                            <span class="mobile-nav-icon">✕</span>
+                            Effacer tout
+                        </button>
+                        <div class="mobile-nav-divider"></div>
+                        <button class="mobile-nav-item theme-toggle-mobile" id="themeToggleMobile">
+                            <span class="mobile-nav-icon theme-icon-mobile">🌙</span>
+                            Changer de thème
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="editor-container">
+                <!-- Editor Panel -->
+                <div class="panel editor-panel">
+                    <div class="panel-header">
+                        <h2 class="panel-title">
+                            <span class="panel-icon">✎</span>
+                            Éditeur Markdown
+                        </h2>
+                        <div class="panel-actions">
+                            <span class="word-count" id="wordCount">0 mots</span>
+                        </div>
+                    </div>
+                    <div class="panel-content">
+                        <textarea 
+                            id="markdownInput" 
+                            class="markdown-editor" 
+                            placeholder="Tapez votre Markdown ici...
+
+# Bienvenue dans Markdown Previewer
+
+## Fonctionnalités
+
+- **Prévisualisation en temps réel** : Voyez vos modifications instantanément
+- **Affichage HTML brut** : Basculez entre rendu visuel et code HTML
+- **Design professionnel** : Interface sobre et élégante
+- **Export HTML** : Exportez votre contenu au format HTML
+- **Responsive** : Fonctionne sur tous les appareils
+
+### Syntaxe Markdown supportée
+
+- Titres (# ## ###)
+- **Texte en gras** et *italique*
+- [Liens](https://example.com)
+- Listes à puces et numérotées
+- `Code inline` et blocs de code
+- > Citations
+- ---
+- Tableaux
+
+```javascript
+// Exemple de code
+function hello() {
+    console.log('Hello, Markdown!');
+}
+```
+
+Commencez à taper pour voir la magie opérer !"></textarea>
+                    </div>
+                </div>
+
+                <!-- Preview Panel -->
+                <div class="panel preview-panel">
+                    <div class="panel-header">
+                        <h2 class="panel-title">
+                            <span class="panel-icon">👁</span>
+                            <span id="previewTitle">Prévisualisation</span>
+                        </h2>
+                        <div class="panel-actions">
+                            <button class="btn btn-ghost" id="togglePreviewMode">
+                                <span class="btn-icon">🔧</span>
+                                <span id="toggleModeText">HTML Brut</span>
+                            </button>
+                            <button class="btn btn-ghost" id="syncScroll">
+                                <span class="btn-icon">⇅</span>
+                                Sync Scroll
+                            </button>
+                        </div>
+                    </div>
+                    <div class="panel-content">
+                        <div id="markdownPreview" class="markdown-preview"></div>
+                        <pre id="htmlRawPreview" class="html-raw-preview" style="display: none;"></pre>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="footer-text">
+                    Développé avec ❤️ par le Groupe 22 - BIT Computer Science | 
+                    <a href="index.html" class="footer-link">Accueil</a> | 
+                    <a href="about.html" class="footer-link">À Propos</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="JS/hamburger-menu.js"></script>
+    <script src="JS/markdown-parser.js"></script>
+    <script src="JS/app.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos - Markdown Previewer</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">
+                    <span class="logo-icon">#</span>
+                    Markdown Previewer
+                </h1>
+                
+                <!-- Menu Hamburger -->
+                <button class="hamburger-menu" id="hamburgerMenu" aria-label="Menu de navigation">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                
+                <!-- Navigation Desktop -->
+                <div class="header-actions desktop-nav">
+                    <a href="index.html" class="btn btn-secondary">
+                        <span class="btn-icon">🏠</span>
+                        Accueil
+                    </a>
+                    <a href="app.html" class="btn btn-secondary">
+                        <span class="btn-icon">✎</span>
+                        Éditeur
+                    </a>
+                    <div class="theme-selector">
+                        <button id="themeToggle" class="theme-toggle" aria-label="Basculer le thème">
+                            <span class="theme-icon">🌙</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Menu Mobile -->
+                <nav class="mobile-nav" id="mobileNav">
+                    <div class="mobile-nav-content">
+                        <a href="index.html" class="mobile-nav-item">
+                            <span class="mobile-nav-icon">🏠</span>
+                            Accueil
+                        </a>
+                        <a href="app.html" class="mobile-nav-item">
+                            <span class="mobile-nav-icon">✎</span>
+                            Éditeur
+                        </a>
+                        <a href="about.html" class="mobile-nav-item active">
+                            <span class="mobile-nav-icon">ℹ️</span>
+                            À Propos
+                        </a>
+                        <div class="mobile-nav-divider"></div>
+                        <button class="mobile-nav-item theme-toggle-mobile" id="themeToggleMobile">
+                            <span class="mobile-nav-icon theme-icon-mobile">🌙</span>
+                            Changer de thème
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content - About Page -->
+        <main class="main-content about-page">
+            <div class="about-container">
+                <section class="about-header">
+                    <h2 class="about-title">À Propos du Projet</h2>
+                    <p class="about-subtitle">Découvrez l'équipe derrière cette application innovante</p>
+                </section>
+
+                <section class="project-info">
+                    <div class="info-card">
+                        <h3>🎓 Contexte Académique</h3>
+                        <p>Cette application <strong>Markdown Previewer</strong> a été développée dans le cadre des études en <strong>Computer Science</strong> de <strong>BIT (Burkina Institute of Technology)</strong>.</p>
+                        <p>Le projet illustre l'application des meilleures pratiques de développement web moderne et constitue un excellent exemple de travail collaboratif en équipe.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>🚀 Objectifs du Projet</h3>
+                        <ul>
+                            <li>Créer une interface utilisateur moderne et intuitive</li>
+                            <li>Implémenter un système de thème adaptatif</li>
+                            <li>Développer un éditeur Markdown en temps réel</li>
+                            <li>Appliquer les principes de design responsive</li>
+                            <li>Collaborer efficacement en équipe de développement</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>⚡ Technologies Utilisées</h3>
+                        <div class="tech-stack">
+                            <span class="tech-item">HTML5</span>
+                            <span class="tech-item">CSS3</span>
+                            <span class="tech-item">JavaScript ES6+</span>
+                            <span class="tech-item">Variables CSS</span>
+                            <span class="tech-item">Grid & Flexbox</span>
+                            <span class="tech-item">LocalStorage</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="team-section">
+                    <h3>👥 Équipe de Développement - Groupe 22</h3>
+                    <p class="team-description">
+                        Cette application a été développée par le <strong>Groupe 22</strong> du département Computer Science de BIT. 
+                        Notre équipe de six développeurs passionnés a collaboré pour créer cette solution innovante.
+                    </p>
+
+                    <div class="team-table-container">
+                        <table class="team-table">
+                            <thead>
+                                <tr>
+                                    <th>N°</th>
+                                    <th>Nom Complet</th>
+                                    <th>Rôle dans le Projet</th>
+                                    <th>Spécialité</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="member-name">[KAFANDO Dan]</td>
+                                    <td>Chef de Projet / Frontend</td>
+                                    <td>UI/UX Design</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td class="member-name">[ZARANI Kader]</td>
+                                    <td>Développeur Frontend</td>
+                                    <td>CSS/JavaScript</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td class="member-name">[SAWADOGO Azael]</td>
+                                    <td>Développeur JavaScript</td>
+                                    <td>Logique Métier</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td class="member-name">[Balima Hector]</td>
+                                    <td>Designer / Intégrateur</td>
+                                    <td>Design System</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td class="member-name">[ZONGO Safiatou]</td>
+                                    <td>Testeur / QA</td>
+                                    <td>Tests & Validation</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td class="member-name">[YAMEOGO Angeline]</td>
+                                    <td>Documentaliste</td>
+                                    <td>Documentation</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="edit-note">
+                        <p><strong>Note :</strong> Merci à tous pour votre contribution à ce projet !</p>
+                    </div>
+                </section>
+
+                <section class="achievements">
+                    <h3>🏆 Réalisations du Projet</h3>
+                    <div class="achievement-grid">
+                        <div class="achievement-item">
+                            <span class="achievement-icon">✨</span>
+                            <h4>Design Expert</h4>
+                            <p>Interface moderne avec système de thème sophistiqué</p>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-icon">⚡</span>
+                            <h4>Performance</h4>
+                            <p>Rendu en temps réel optimisé et fluide</p>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-icon">📱</span>
+                            <h4>Responsive</h4>
+                            <p>Adaptation parfaite sur tous les appareils</p>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-icon">♿</span>
+                            <h4>Accessibilité</h4>
+                            <p>Interface accessible et inclusive</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contact-info">
+                    <h3>📞 Contact</h3>
+                    <p>Pour toute question concernant ce projet, vous pouvez contacter l'équipe via :</p>
+                    <div class="contact-details">
+                        <p><strong>Université :</strong> BIT - Burkina Institute of Technology</p>
+                        <p><strong>Département :</strong> Computer Science</p>
+                        <p><strong>Groupe :</strong> Groupe 22</p>
+                        <p><strong>Année Académique :</strong> 2024-2025</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="footer-text">
+                    Développé avec ❤️ par le Groupe 22 - BIT Computer Science | 
+                    <a href="index.html" class="footer-link">Accueil</a> | 
+                    <a href="app.html" class="footer-link">Éditeur</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="JS/hamburger-menu.js"></script>
+    <script src="JS/theme-handler.js"></script>
+</body>
+</html>
+
