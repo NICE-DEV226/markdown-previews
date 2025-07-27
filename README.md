@@ -369,7 +369,7 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 ## 📞 Contact
 
 **Université :** BIT - Burkina Institute of Technology  
-**Département :** Computer Science  
+**Département :** Computer Science 27
 **Groupe :** Groupe 22  
 **Année Académique :** 2024-2025
 
@@ -377,8 +377,7 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 
 ## 🙏 Remerciements
 
-- [Inter Font](https://rsms.me/inter/) pour la typographie
-- [JetBrains Mono](https://www.jetbrains.com/mono/) pour le code
+- [G_22] pour la typographie & developpements
 - **BIT Computer Science** pour l'encadrement
 - Communauté open source pour l'inspiration
 
@@ -386,7 +385,7 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 
 <div align="center">
 
-**⭐ Développé avec ❤️ par le Groupe 22 - BIT Computer Science ⭐**
+**⭐ Développé avec ❤️ par le Groupe 22 - BIT Computer Science 27 ⭐**
 
 </div>
 
