@@ -88,9 +88,6 @@ markdown-previews/
 │   ├── code-js-parser.png
 │   └── code-js-toggle.png
 ├── README.md                     # Documentation
-├── DESIGN-EXPERT.md             # Guide de design
-├── EXPLICATION-JS.md            # Explications JavaScript
-└── NOUVELLES-FONCTIONNALITES.md # Nouvelles fonctionnalités
 ```
 
 ### 🔧 Code JavaScript Principal
