@@ -44,6 +44,9 @@ Markdown Previewer est une application web moderne développée par le **Groupe 
 ![Mode HTML](screenshot/screenshot-html-mode.png)
 *Interface en mode code HTML brut montrant le code généré*
 
+### Responsivité 
+![Responsivité](screenshot/screnshoot-reponsive.png)
+
 ---
 
 ## 🚀 Installation et Utilisation
